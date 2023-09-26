@@ -1,30 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  list-style: none;
+  font-family: 'Karla', sans-serif;
+  border-radius: 16px;
+}
+:root > * {
+  margin: 0 15vw;
+}
+
+h1 {
+  font-size: 8rem;
+  font-family: 'Markazi Text', serif;
+  color: #F4CE14;
+  font-weight: 500;
+}
+h2 {
+  font-size: 4rem;
+  font-family: 'Markazi Text', serif;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+h5, nav {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+h6, footer figcaption {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1rem;
+}
+span, footer a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #EE9972;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 nav {
-  height: 20vh;
-  display: inline-flex;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.nav-logo {
-    width: 50%;
+#nav-logo {
+  flex: 1;
+  height: 50%;
 }
-.nav-list {
+#nav-list {
 flex: 1;
-display: inline-flex;
+display: flex;
+flex-wrap: wrap;
+min-width: 70%;
 }
-.nav-item {
-    flex: 1;
-    flex-wrap: wrap;
+#nav-list > a {
+  flex: 1;
+  text-align: center;
+  line-height: 7vh;
+}
+#nav-list > a :hover, #home{
+  background-color: #F4CE14;
+}
+#nav-list > a :active{
+  background-color: #EE9972;
+}
+
+main {
+  text-align: center;
 }
 
 footer {
-    text-align: center;
     height: 30vh;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
+footer figcaption {
+  margin-bottom: 1rem;
+}
+footer > * {
+    flex: 1;
+    margin-top: 1rem;
+  }
+#footer-icon {
+  height: 50%;
+}
+footer a :hover {
+  text-decoration: underline;
+}
+footer a :active {
+  color: #495E57;
+}
