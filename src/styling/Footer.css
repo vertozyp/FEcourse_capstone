@@ -1,0 +1,22 @@
+footer {
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+footer figcaption {
+  margin-bottom: 1rem;
+}
+footer > * {
+    flex: 1;
+    margin-top: 1rem;
+  }
+#footer-icon {
+  height: 50%;
+}
+footer a :hover {
+  text-decoration: underline;
+}
+footer a :active {
+  color: #495E57;
+}

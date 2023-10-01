@@ -52,58 +52,9 @@ a {
   text-decoration: none;
   color: black;
 }
-
-nav {
-  min-height: 20vh;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-#nav-logo {
-  flex: 1;
-  height: 50%;
-}
-#nav-list {
-flex: 1;
-display: flex;
-flex-wrap: wrap;
-min-width: 70%;
-}
-#nav-list > a {
-  flex: 1;
-  text-align: center;
-  line-height: 7vh;
-}
-#nav-list > a :hover, #home{
+.button {
+  display: inline-block;
+  padding: 1rem;
   background-color: #F4CE14;
-}
-#nav-list > a :active{
-  background-color: #EE9972;
-}
-
-main {
-  text-align: center;
-}
-
-footer {
-    height: 30vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-footer figcaption {
-  margin-bottom: 1rem;
-}
-footer > * {
-    flex: 1;
-    margin-top: 1rem;
-  }
-#footer-icon {
-  height: 50%;
-}
-footer a :hover {
-  text-decoration: underline;
-}
-footer a :active {
   color: #495E57;
 }

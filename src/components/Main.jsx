@@ -1,15 +1,15 @@
+import { Routes, Route } from "react-router";
+import HomePage from "./home/Homepage";
+import BookingPage from "./booking/BookingPage";
+
 export default function Main () {
 
     return (
         <main>
-            <h1>Little Lemon</h1>
-            <h2>Chicago</h2>
-            <h3>Chicago</h3>
-            <h4>Chicago</h4>
-            <h5>Chicago</h5>
-            <h6>Chicago</h6>
-            <p>pp</p>
-            <span>Highlighted pp</span>
+            <Routes>
+                <Route path="/" element={<HomePage />}></Route>
+                <Route path="/booking" element={<BookingPage />}></Route>
+            </Routes>
         </main>
     )
 }

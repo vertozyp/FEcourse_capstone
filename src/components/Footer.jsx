@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer () {
     return (
         <footer>
@@ -5,28 +7,28 @@ export default function Footer () {
             <figure>
                 <figcaption>Doormat navigation</figcaption>
                 <ul>
-                    <a href="/"><li>Home</li></a>
-                    <a href="/about"><li>About</li></a>
-                    <a href="/menu"><li>Menu</li></a>
-                    <a href="/reservation"><li>Reservation</li></a>
-                    <a href="/order"><li>Order online</li></a>
-                    <a href="/login"><li>Log in</li></a>
+                    < Link to="/"><li>Home</li></ Link>
+                    < Link to="/about"><li>About</li></ Link>
+                    < Link to="/menu"><li>Menu</li></ Link>
+                    < Link to="/booking"><li>Booking</li></ Link>
+                    < Link to="/order"><li>Order online</li></ Link>
+                    < Link to="/login"><li>Log in</li></ Link>
                 </ul>
             </figure>
             <figure>
                 <figcaption>Contact</figcaption>
                 <ul>
-                    <a href="/contact/address"><li>Address</li></a>
-                    <a href="/contact/phone"><li>Phone number</li></a>
-                    <a href="/contact/email"><li>E-mail</li></a>
+                    < Link to="/contact/address"><li>Address</li></ Link>
+                    < Link to="/contact/phone"><li>Phone number</li></ Link>
+                    < Link to="/contact/email"><li>E-mail</li></ Link>
                 </ul>
             </figure>
             <figure>
                 <figcaption>Social media links</figcaption>
                 <ul>
-                    <a href="https://www.facebook.com/" target="_blank"><li>Facebook</li></a>
-                    <a href="https://www.instagram.com/" target="_blank"><li>Instagram</li></a>
-                    <a href="https://twitter.com/" target="_blank"><li>Twitter</li></a>
+                    < Link to="https://www.facebook.com/" target="_blank"><li>Facebook</li></ Link>
+                    < Link to="https://www.instagram.com/" target="_blank"><li>Instagram</li></ Link>
+                    < Link to="https://twitter.com/" target="_blank"><li>Twitter</li></ Link>
                 </ul>
             </figure>
         </footer>
