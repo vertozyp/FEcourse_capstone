@@ -1,10 +1,13 @@
 export default function Rating ({img, name, rating, description}) {
     return (
-        <figure>
-            <h6>Rating</h6>
-            <img src={img} alt={`Photo of ${name}`}/>
-            <h6>{name}</h6>
-            <span>{rating}</span>
+        <figure className="rating">
+            <figcaption>
+                <img src={img} alt={`Photo of ${name}`}/>
+                <div>
+                    <h6>{name}</h6>
+                    <span>{rating}</span>
+                </div>
+            </figcaption>
             <p>{description}</p>
         </figure>
     )

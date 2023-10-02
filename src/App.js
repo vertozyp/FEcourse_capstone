@@ -1,4 +1,5 @@
 import './styling/App.css';
+import './styling/Main.css';
 import './styling/Nav.css';
 import './styling/Home.css';
 import './styling/Footer.css';

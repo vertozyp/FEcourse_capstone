@@ -1,9 +1,11 @@
 export default function Speciality ({img, title, price, description}) {
     return (
-        <figure>
+        <figure className="speciality">
             <img src={img} alt={`photo of ${title}`} />
-            <h6>{title}</h6>
-            <span>{price}</span>
+            <figcaption>
+                <h6>{title}</h6>
+                <span>{price}</span>
+            </figcaption>
             <p>{description}</p>
             <span>Order a delivery</span>
         </figure>

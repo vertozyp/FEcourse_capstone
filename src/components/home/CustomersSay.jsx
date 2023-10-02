@@ -3,7 +3,9 @@ import Rating from "../common/Rating"
 export default function CustomersSay () {
     return (
         <section id="customerssay">
-            <h4>Testamonials</h4>
+            <div>
+                <h4>Customers said about us</h4>
+            </div>
             <div>
                 <Rating 
                     img="user1.jpg" 

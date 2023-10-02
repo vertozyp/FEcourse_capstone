@@ -1,29 +1,130 @@
 #hero {
     text-align: center;
-    height: 80vh;
-    margin: 0 -15vw;
+    margin-left: -15vw;
+    margin-right: -15vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background-image: url(./../../public/restauranfood.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 0;
   }
+#hero h2 {
+    color: white;
+  }
+#hero #hero-description {
+    background-color: #495E57;
+    color: white;
+    padding: 1rem;
+    margin: 15vh 15vw 5vh 15vw;
+}
+#hero button {
+    margin-bottom: 5vh;
+}
 
-  #specials div {
+#specials div {
     display: flex;
-  }
-  #specials img{
-    width: 20vw;
-    height: auto;
-  }
-
-  #customerssay div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+}
+#specials h4 {
+    padding-top: 0.5rem;
+}
+.speciality {
+    flex: 1;
     display: flex;
-  }
-  #customerssay img {
-    width: 10vw;
-    height: auto;
-  }
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #EDEFEE;
+}
+.speciality img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    margin-bottom: 3vh;
+}
+.speciality img ~ * {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.speciality figcaption {
+    display: flex;
+    justify-content: space-between;
+}
+.speciality figcaption > * {
+    display: inline;
+}
+.speciality p {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    flex-grow: 1;
+}
+.speciality > span {
+    margin-bottom: 2vh;
+}
 
-  #chicago img {
-    width: 20vw;
-  }
+#customerssay > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+}
+#customerssay h4 {
+    text-align: center;
+}
+.rating {
+    flex: 1;
+    min-width: 110px;
+    background-color: #EDEFEE;
+}
+.rating > * {
+    margin: 10%;
+}
+.rating figcaption {
+    display: flex;
+    justify-content: space-between;
+}
+.rating img {
+    width: 35%;
+    min-width: 35px;
+    height: auto;
+    align-self: center;
+}
+
+#chicago {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 40vh;
+}
+#chicago figure{
+    flex: 1;
+}
+#chicago h2 {
+    color: #F4CE14;
+}
+#chicago p {
+    margin-top: 5vh;
+}
+.chicago-gallery {
+    position: relative;
+    min-width: 50%;
+    min-height: 20vh;
+}
+.chicago-gallery img {
+    position: absolute;
+    object-fit: cover;
+    height: 80%;
+    max-width: 80%;
+}
+.chicago-gallery #chicago-img1 {
+    top: 0;
+    right: 0;
+}
+.chicago-gallery #chicago-img2 {
+    bottom: 0;
+    right: 20%;
+}

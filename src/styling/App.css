@@ -9,25 +9,28 @@
   font-family: 'Karla', sans-serif;
   border-radius: 16px;
 }
+:root {
+  min-width: 320px;
+}
 :root > * {
   margin: 0 15vw;
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: calc(3rem + 5vw);
   font-family: 'Markazi Text', serif;
   color: #F4CE14;
   font-weight: 500;
 }
 h2 {
-  font-size: 4rem;
+  font-size: calc(2rem + 2vw);
   font-family: 'Markazi Text', serif;
 }
-h3 {
-  font-size: 2rem;
+h3, button {
+  font-size: calc(1rem + 1vw);
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: calc(1.25rem + 1.25vw);
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -52,7 +55,7 @@ a {
   text-decoration: none;
   color: black;
 }
-.button {
+button {
   display: inline-block;
   padding: 1rem;
   background-color: #F4CE14;
