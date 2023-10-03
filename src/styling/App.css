@@ -72,3 +72,10 @@ button:active {
 input, select {
   background-color: #EDEFEE;
 }
+
+main section  {
+  margin-bottom: 10vh;
+}
+section > div ~ div {
+  margin-top: 5vh;
+}

@@ -1,6 +1,0 @@
-main section  {
-    margin-bottom: 10vh;
-}
-section > div ~ div {
-    margin-top: 5vh;
-}

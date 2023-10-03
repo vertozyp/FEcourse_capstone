@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, hasImputValue } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import BookingForm from './components/booking/BookingForm';
 import {BrowserRouter} from "react-router-dom"
 
@@ -16,12 +16,12 @@ test('Validates time picking', () => {
   expect(timeElement).toContainHTML(expectedTimes);
 })
 
-
 test('Check number of guests validation', () => {
   render(<BrowserRouter><BookingForm /></BrowserRouter>);
   const guestsField = screen.getByLabelText("Number of guests *");
   expect(guestsField).toBeInTheDocument();
 
-  fireEvent.change(guestsField, {target: {value: "0"}});
-  expect(hasImputValue(guestsField, "0")).toBe(true);
+  expect(guestsField.value).toBe("1");
+  fireEvent.change(guestsField, {target: {value: "20"}});
+  expect(guestsField.value).toBe("20");
 })
