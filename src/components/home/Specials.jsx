@@ -6,7 +6,7 @@ export default function Specials () {
         <section id="specials">
             <div>
                 <h4>This weeks specials!</h4>
-                <Button text="Online Menu"/>
+                <Button>Online Menu</Button>
             </div>
             <div>
                 <Speciality 

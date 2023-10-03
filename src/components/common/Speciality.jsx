@@ -1,7 +1,7 @@
 export default function Speciality ({img, title, price, description}) {
     return (
         <figure className="speciality">
-            <img src={img} alt={`photo of ${title}`} />
+            <img src={img} alt={title} />
             <figcaption>
                 <h6>{title}</h6>
                 <span>{price}</span>

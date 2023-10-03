@@ -20,7 +20,7 @@ nav {
     line-height: 7vh;
     margin: 1rem;
   }
-  #nav-list > a :hover, #home{
+  #nav-list > a :hover{
     background-color: #F4CE14;
   }
   #nav-list > a :active{

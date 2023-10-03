@@ -2,6 +2,7 @@ import './styling/App.css';
 import './styling/Main.css';
 import './styling/Nav.css';
 import './styling/Home.css';
+import './styling/Booking.css';
 import './styling/Footer.css';
 import Footer from './components/Footer';
 import Header from './components/Header';

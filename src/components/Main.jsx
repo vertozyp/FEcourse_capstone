@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router";
 import HomePage from "./home/Homepage";
 import BookingPage from "./booking/BookingPage";
+import ConfirmedBooking from "./booking/ConfirmedBooking";
 
 export default function Main () {
 
@@ -9,6 +10,7 @@ export default function Main () {
             <Routes>
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/booking" element={<BookingPage />}></Route>
+                <Route path="/booking/confirmation" element={<ConfirmedBooking />}></Route>
             </Routes>
         </main>
     )

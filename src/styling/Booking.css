@@ -1,0 +1,84 @@
+#booking-title {
+    min-height: 80vh;
+    margin-left: -15vw;
+    margin-right: -15vw;
+    border-radius: 0;
+    background-image: url(./../../public/table.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+#booking-title figure {
+    padding-top: 60vh;
+}
+#booking-title h2 {
+    margin-left: 18vw;
+    margin-right: 18vw;
+    color: #F4CE14;
+    background-color: white;
+}
+
+#booking-form {
+    text-align: center;
+}
+#booking-form button {
+    margin-bottom: 10vh;
+}
+
+#booking-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#booking-details h4 {
+    width: 70vw;
+}
+#booking-details > * {
+    margin: 1%;
+}
+#booking-details > div {
+    text-align: left;
+}
+#booking-details input, #booking-details select {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+}
+#booking-table h4 {
+    margin-bottom: 5vh;
+}
+#booking-table > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+#booking-table input {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+#booking-table label {
+    line-height: 5vh;
+    background-color: #495E57;
+}
+#booking-table input:hover + label{
+    box-shadow: 5px 3px 3px;
+    cursor: pointer;
+}
+#booking-table input:checked + label{
+    background-color:#F4CE14;
+}
+#booking-table input:disabled + label{
+    background-color:#EDEFEE;
+    box-shadow: none;
+    cursor: auto;
+}
+#booking-table .tbl-small {
+    width: 10vw;
+}
+#booking-table .tbl-med {
+    width: 20vw;
+}
+#booking-table .tbl-big {
+    width: 40vw;
+}

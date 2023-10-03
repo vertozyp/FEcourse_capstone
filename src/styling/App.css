@@ -8,6 +8,7 @@
   list-style: none;
   font-family: 'Karla', sans-serif;
   border-radius: 16px;
+  background-color: transparent;
 }
 :root {
   min-width: 320px;
@@ -34,7 +35,7 @@ h4 {
   font-weight: 800;
   text-transform: uppercase;
 }
-h5, nav {
+h5, nav, label {
   font-size: 1.25rem;
   font-weight: 800;
 }
@@ -60,4 +61,14 @@ button {
   padding: 1rem;
   background-color: #F4CE14;
   color: #495E57;
+}
+button:hover {
+  box-shadow: 5px 3px 3px;
+  cursor: pointer;
+}
+button:active {
+  background-color: #EE9972;
+}
+input, select {
+  background-color: #EDEFEE;
 }
