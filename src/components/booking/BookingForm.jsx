@@ -28,7 +28,7 @@ export default function BookingForm () {
     const submitForm = (e) => {
         e.preventDefault();
         if (checkTables()){
-            if(submitAPI()) navigate("/booking/confirmation");
+            if(submitAPI()) navigate("/confirmation");
             else alert("Oops, we were not able to proceed your reservation. \nPlease try it again.");
         }
         else alert("Pleas fill in all required fields first.");

@@ -3,7 +3,7 @@ export default function ConfirmedBooking () {
         <section id="book-conf">
             <h2>Thank you for your reservation.</h2>
             <h2>Your</h2>
-            <img src="/Logo.jpg" alt="LittleLemon logo"/>
+            <img src="Logo.jpg" alt="LittleLemon logo"/>
         </section>
     )
 }
