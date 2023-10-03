@@ -22,7 +22,11 @@
     text-align: center;
 }
 #booking-form button {
+    margin-top: 5vh;
     margin-bottom: 10vh;
+}
+#booking-form h6 {
+    color: red;
 }
 
 #booking-details {
@@ -81,4 +85,16 @@
 }
 #booking-table .tbl-big {
     width: 40vw;
+}
+
+#book-conf {
+    height: 80vh;
+    text-align: center;
+    margin-top: 10vh;
+}
+#book-conf h2 + h2 {
+    margin-top: 10vh;
+}
+#book-conf img {
+    max-width: 70vw;
 }

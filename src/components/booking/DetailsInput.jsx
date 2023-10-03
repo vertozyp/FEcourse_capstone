@@ -4,14 +4,20 @@ import Select from "../common/Select";
 
 export default function DetailsInput ({date, availableTimes, setDate}) {
 
-    const [time, setTime] = useState("");
-    const [guests, setGuests] = useState(0);
+    const [time, setTime] = useState(availableTimes[0]);
+    const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState("");
 
     return (
         <section id="booking-details" >
             <h4>When yould You like to come?</h4>
-            <Input id="book-date" type="date" value={date} onChange={e => setDate(e.target.value)}>
+            <Input id="book-date" type="date" value={date} 
+                onChange={e => {
+                    const today = new Date();
+                    if(new Date(e.target.value) >= new Date(today.getFullYear(), today.getMonth(), today.getDate()))
+                        setDate(e.target.value);
+                    else alert("You can not book table for past days.");
+            }}>
                 Date *
             </Input>
             <Select id="book-time" value={time} onChange={e => setTime(e.target.value)} options={availableTimes}>

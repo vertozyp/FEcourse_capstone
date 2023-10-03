@@ -1,3 +1,3 @@
 export default function Button ({children, onClick, type}) {
-    return <button onClick={onClick} type={type}>{children}</button>
+    return <button aria-label="On Click" onClick={onClick} type={type}>{children}</button>
 }
